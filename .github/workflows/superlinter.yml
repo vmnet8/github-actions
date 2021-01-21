@@ -23,3 +23,5 @@ jobs:
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: test echo
+        run: echo "it is an inauguration day"
