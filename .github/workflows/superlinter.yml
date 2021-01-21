@@ -28,4 +28,4 @@ jobs:
       - name: docker experimental
         run: export DOCKER_CLI_EXPERIMENTAL=enabled
       - name: docker login
-        run: echo $DOCKERAPIKEY | docker login -u "vmnet8" --password-stdin
+        run: docker login -u "vmnet8" -p $DOCKERAPIKEY
