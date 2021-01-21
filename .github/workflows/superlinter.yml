@@ -27,3 +27,5 @@ jobs:
         run: echo "it is an inauguration day"
       - name: docker version
         run: docker version
+      - name: docker experimental
+        run: export DOCKER_CLI_EXPERIMENTAL=enabled
