@@ -23,9 +23,9 @@ jobs:
     #    env:
      #     DEFAULT_BRANCH: master
   #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: test echo
-        run: echo "it is an inauguration day"
       - name: docker version
         run: docker version
       - name: docker experimental
         run: export DOCKER_CLI_EXPERIMENTAL=enabled
+      - name: docker login
+        run: echo $DOCKERAPIKEY | docker login -u "vmnet8" --password-stdin
