@@ -28,4 +28,4 @@ jobs:
       - name: docker experimental
         run: export DOCKER_CLI_EXPERIMENTAL=enabled
       - name: docker login
-        run: docker login -u "vmnet8" -p ${{ secrets.DOCKERAPIKEY }}
+        run: docker login -u ${{ secrets.DOCKERUSERNAME }} -p ${{ secrets.DOCKERAPIKEY }}
